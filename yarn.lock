@@ -80,6 +80,15 @@
     "@angular-devkit/core" "7.0.0-rc.1"
     rxjs "6.3.3"
 
+"@angular-devkit/core@0.8.4":
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-0.8.4.tgz#ccc73308990c7bc912e2f2759bf29e069eabf42f"
+  dependencies:
+    ajv "~6.4.0"
+    chokidar "^2.0.3"
+    rxjs "~6.2.0"
+    source-map "^0.5.6"
+
 "@angular-devkit/core@7.0.0-rc.1":
   version "7.0.0-rc.1"
   resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-7.0.0-rc.1.tgz#809aa0c2416dab720e3388fbd2b19266a3c50763"
@@ -89,6 +98,13 @@
     fast-json-stable-stringify "2.0.0"
     rxjs "6.3.3"
     source-map "0.7.3"
+
+"@angular-devkit/schematics@0.8.4":
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-0.8.4.tgz#e19f6fc8b1e88277d921a286914dc9d01f139738"
+  dependencies:
+    "@angular-devkit/core" "0.8.4"
+    rxjs "~6.2.0"
 
 "@angular-devkit/schematics@7.0.0-rc.1":
   version "7.0.0-rc.1"
@@ -179,9 +195,24 @@
   dependencies:
     tslib "^1.9.0"
 
+"@angular/pwa@^0.8.4":
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/@angular/pwa/-/pwa-0.8.4.tgz#3aec49b40bad986d2fdfc5d1fc5d13675ad3224c"
+  dependencies:
+    "@angular-devkit/core" "0.8.4"
+    "@angular-devkit/schematics" "0.8.4"
+    "@schematics/angular" "0.8.4"
+    typescript "~2.6.2"
+
 "@angular/router@~7.0.0-rc.0":
   version "7.0.0-rc.0"
   resolved "https://registry.yarnpkg.com/@angular/router/-/router-7.0.0-rc.0.tgz#6d6ddae8cf8bb15f9c0aaba2bb7487eb42248bd2"
+  dependencies:
+    tslib "^1.9.0"
+
+"@angular/service-worker@~7.0.0-rc.0":
+  version "7.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@angular/service-worker/-/service-worker-7.0.0-rc.0.tgz#52c9bb2c2014f7c2360e1d5a2bd87a18296ba04b"
   dependencies:
     tslib "^1.9.0"
 
@@ -272,6 +303,14 @@
     rxjs "6.3.3"
     tree-kill "1.2.0"
     webpack-sources "1.2.0"
+
+"@schematics/angular@0.8.4":
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-0.8.4.tgz#ee3c8535476d7b49b1a5676f4a5eee3fc158506f"
+  dependencies:
+    "@angular-devkit/core" "0.8.4"
+    "@angular-devkit/schematics" "0.8.4"
+    typescript ">=2.6.2 <2.10"
 
 "@schematics/angular@7.0.0-rc.1":
   version "7.0.0-rc.1"
@@ -528,6 +567,15 @@ ajv@^6.1.0:
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
+
+ajv@~6.4.0:
+  version "6.4.0"
+  resolved "http://registry.npmjs.org/ajv/-/ajv-6.4.0.tgz#d3aff78e9277549771daf0164cff48482b754fc6"
+  dependencies:
+    fast-deep-equal "^1.0.0"
+    fast-json-stable-stringify "^2.0.0"
+    json-schema-traverse "^0.3.0"
+    uri-js "^3.0.2"
 
 amdefine@>=0.0.4:
   version "1.0.1"
@@ -5310,6 +5358,12 @@ rxjs@6.3.3, rxjs@^6.1.0, rxjs@~6.3.3:
   dependencies:
     tslib "^1.9.0"
 
+rxjs@~6.2.0:
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.2.2.tgz#eb75fa3c186ff5289907d06483a77884586e1cf9"
+  dependencies:
+    tslib "^1.9.0"
+
 safe-buffer@5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
@@ -6211,6 +6265,14 @@ typescript@3.1.1, typescript@~3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.1.1.tgz#3362ba9dd1e482ebb2355b02dfe8bcd19a2c7c96"
 
+"typescript@>=2.6.2 <2.10":
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.9.2.tgz#1cbf61d05d6b96269244eb6a3bce4bd914e0f00c"
+
+typescript@~2.6.2:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.6.2.tgz#3c5b6fd7f6de0914269027f03c0946758f7673a4"
+
 uglify-es@^3.3.4:
   version "3.3.9"
   resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.3.9.tgz#0c1c4f0700bed8dbc124cdb304d2592ca203e677"
@@ -6281,6 +6343,12 @@ upath@^1.0.5:
 upper-case@^1.1.1:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/upper-case/-/upper-case-1.1.3.tgz#f6b4501c2ec4cdd26ba78be7222961de77621598"
+
+uri-js@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/uri-js/-/uri-js-3.0.2.tgz#f90b858507f81dea4dcfbb3c4c3dbfa2b557faaa"
+  dependencies:
+    punycode "^2.1.0"
 
 uri-js@^4.2.2:
   version "4.2.2"
