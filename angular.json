@@ -114,6 +114,19 @@
             "main": "src/main.server.ts",
             "tsConfig": "src/tsconfig.server.json"
           }
+        },
+        "app-shell": {
+          "builder": "@angular-devkit/build-angular:app-shell",
+          "options": {
+            "browserTarget": "offline-first:build",
+            "serverTarget": "offline-first:server",
+            "route": "offline-shell"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "offline-first:build:production"
+            }
+          }
         }
       }
     },

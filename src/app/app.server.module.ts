@@ -1,14 +1,20 @@
 import { NgModule } from '@angular/core';
 import { ServerModule } from '@angular/platform-server';
 
-import { AppModule } from './app.module';
-import { AppComponent } from './app.component';
+import { RootModule } from './root.module';
+import { RootComponent } from './root.component';
+import { Routes, RouterModule } from '@angular/router';
+import { AppShellComponent } from './app-shell/app-shell.component';
+
+const routes: Routes = [ { path: 'offline-shell', component: AppShellComponent }];
 
 @NgModule({
   imports: [
-    AppModule,
+    RootModule,
     ServerModule,
+    RouterModule.forRoot(routes),
   ],
-  bootstrap: [AppComponent],
+  bootstrap: [RootComponent],
+  declarations: [AppShellComponent],
 })
 export class AppServerModule {}
